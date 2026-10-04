@@ -7,8 +7,6 @@ class Solution:
         if (x <0):
             return False 
         
-        if (x <10 ) :
-            return True
 
         while n>0:
 
