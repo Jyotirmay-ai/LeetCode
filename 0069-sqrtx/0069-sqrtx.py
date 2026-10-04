@@ -3,6 +3,7 @@ class Solution:
 
         left = 0
         right = x
+        ans =0
 
         while left<=right : 
             mid = left + (right - left) // 2
@@ -12,14 +13,22 @@ class Solution:
 
             elif  int (mid*mid) < x:
                 left = mid + 1
+                ans = mid
+                print(ans)
                
                 
             elif int(mid * mid) > x:
                 right = mid - 1
             
-        return int (mid -1)
-                
-            
+        return ans
+
+
+
+
+
+
+
+
 
 
 
@@ -28,7 +37,6 @@ class Solution:
 
 #         left = 0
 #         right = x
-#         ans =0
 
 #         while left<=right : 
 #             mid = left + (right - left) // 2
@@ -38,15 +46,14 @@ class Solution:
 
 #             elif  int (mid*mid) < x:
 #                 left = mid + 1
-#                 ans = mid
                
                 
 #             elif int(mid * mid) > x:
 #                 right = mid - 1
             
-#         return ans
-
-
+#         return int (mid -1)
+                
+            
 
 
 
